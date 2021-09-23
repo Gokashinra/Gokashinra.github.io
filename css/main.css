@@ -108,6 +108,7 @@ ul.features-list {
   display: grid;
   -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+      overflow: hidden;
 }
 
 ul.features-list li {

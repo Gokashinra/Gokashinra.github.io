@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation part -->
+    <div class="navbar">
+        <div class="container">
+
+            <!-- The home button -->
+            <a class="Logo" href="#"><span>Wibu</span> Corner</a>
+
+            <img id="mobile-cta" class="navigation-button" src="./Assests/image/menu.svg" alt="Open Navigation">
+
+
+            <!-- Navigation Bar -->
+            <nav>
+                <img id="Mobile-exit" class="Mobile-menu-exit" src="./Assests/image/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Most View</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="gopremium"><a href="#">Go premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Hero part -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-collum">
+                <p class="subhead">It's Gokashinra</p>
+                <h1>A Web App Connects Wibu</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video">
+                        <img src="./Assests/image/watch.svg" alt="Watch a video"> Watch a video
+                    </a>
+                </div>
+            </div>
+            <img class="hero-img" src="./Assests/image/all-the-anime-logo-505406.png" alt="">
+        </div>
+    </section>
+    <!-- Feature part -->
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Anime</li>
+                <li>Publication reminders</li>
+                <li>Watching list</li>
+                <li>Realtime Conversation with other</li>
+                <li>Many more awesome features</li>
+            </ul>
+
+            <img src="./Assests/image/Is-Watching-Anime-a-Waste-of-Time.jpg" alt="Watching anime">
+        </div>
+    </section>
+<!-- Third Section -->
+    <section class="testimo-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="./Assests/image/person.jpg" alt="">
+
+                    <blockquote>"We’re born free. All of us. Free. Some don’t believe it, some try to take it away. To hell with them! Water like fire, mountains of ice, the whole bit. Lay your eyes on that, and you’ll know what freedom is, that it’s worth fighting for! Fight to live, risk it all for even a glimmer of real freedom! It doesn't matter what’s waiting outside the gate, or what comes in! It doesn't matter how cruel the world can be, or how unjust! Fight. Fight. Fight. FIGHT! FIGHT!!!"</blockquote>
+                    <cite>Eren Jeager</cite>
+                </li>
+                <li>
+                    <img src="./Assests/image/person.jpg" alt="">
+
+                    <blockquote>"We’re born free. All of us. Free. Some don’t believe it, some try to take it away. To hell with them! Water like fire, mountains of ice, the whole bit. Lay your eyes on that, and you’ll know what freedom is, that it’s worth fighting for! Fight to live, risk it all for even a glimmer of real freedom! It doesn't matter what’s waiting outside the gate, or what comes in! It doesn't matter how cruel the world can be, or how unjust! Fight. Fight. Fight. FIGHT! FIGHT!!!"</blockquote>
+                    <cite>Eren Jeager</cite>
+                </li>
+                <li>
+                    <img src="./Assests/image/person.jpg" alt="">
+
+                    <blockquote>"We’re born free. All of us. Free. Some don’t believe it, some try to take it away. To hell with them! Water like fire, mountains of ice, the whole bit. Lay your eyes on that, and you’ll know what freedom is, that it’s worth fighting for! Fight to live, risk it all for even a glimmer of real freedom! It doesn't matter what’s waiting outside the gate, or what comes in! It doesn't matter how cruel the world can be, or how unjust! Fight. Fight. Fight. FIGHT! FIGHT!!!"</blockquote>
+                    <cite>Eren Jeager</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    
+                    <input type="submit" class="send" value="Send Message">
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.7240961260588!2d105.7316420170475!3d21.27807085912366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134fd1f4237763d%3A0x9f4f9ed221477afe!2zQ2jhu6MgWHXDom4gSMOyYQ!5e0!3m2!1sen!2s!4v1632405263075!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta');
+            nav = document.querySelector('nav');
+            mobileBtnExit = document.getElementById('Mobile-exit')
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>
